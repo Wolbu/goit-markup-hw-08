@@ -48,7 +48,6 @@
   }
 }
 
-
 .site-nav__link--active {
   color: var(--accent-text-color);
 
@@ -64,8 +63,6 @@
   }
 }
 
-
-
 .site-nav__item {
   margin-left: 50px;
 
@@ -73,8 +70,6 @@
     margin-left: 93px;
   }
 }
-
-
 
 /* Auth nav */
 .auth-nav {
@@ -95,8 +90,6 @@
   }
 }
 
-
-
 .auth-nav__link {
   display: flex;
   align-items: center;
@@ -111,10 +104,9 @@
   }
 
   &:hover .auth-nav__icon,
-  &:focus .auth-nav__icon{
+  &:focus .auth-nav__icon {
     fill: var(--accent-text-color);
   }
-
 }
 
 .auth-nav__icon {

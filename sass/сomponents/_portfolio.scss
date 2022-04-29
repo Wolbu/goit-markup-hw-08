@@ -3,8 +3,10 @@
   justify-content: center;
 }
 
-.portfolio-nav__item:not(:last-child) {
-  margin-right: 8px;
+.portfolio-nav__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .portfolio-nav__btn {

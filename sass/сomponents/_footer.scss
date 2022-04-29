@@ -70,8 +70,10 @@
   display: flex;
 }
 
-.central-part__social-networks-item:not(:last-child) {
-  margin-right: 10px;
+.central-part__social-networks-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .central-part__social-networks-link {
