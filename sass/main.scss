@@ -1,0 +1,18 @@
+@import "./utils/vars";
+@import "./base/normalize";
+@import "./base/reset";
+@import "./utils/visually-hidden";
+
+//Components
+@import "./сomponents/_global-styles.scss";
+@import "./сomponents/header";
+@import "./сomponents/hero";
+@import "./сomponents/benefits";
+@import "./сomponents/we-do";
+@import "./сomponents/our-team";
+@import "./сomponents/clients";
+@import "./сomponents/footer";
+@import "./сomponents/portfolio";
+@import "./сomponents/modal";
+@import "./сomponents/modal-form";
+@import "./сomponents/benefits";
