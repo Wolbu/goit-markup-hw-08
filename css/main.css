@@ -181,11 +181,28 @@ textarea {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -196,6 +213,12 @@ textarea {
 .site-nav {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav {
+    display: block;
+  }
 }
 
 .logo {
@@ -216,6 +239,12 @@ textarea {
 .site-nav__list {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav__list {
+    display: block;
+  }
 }
 
 .site-nav__link {
@@ -256,6 +285,12 @@ textarea {
 
 .site-nav__item:first-child {
   margin-left: 93px;
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav__item:first-child {
+    margin-left: 0px;
+  }
 }
 
 /* Auth nav */
