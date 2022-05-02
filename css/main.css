@@ -176,8 +176,8 @@ textarea {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -209,15 +209,40 @@ textarea {
   border-bottom: 1px solid #ececec;
 }
 
+.mobile-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+.mobile-logo {
+  font-family: raleway, monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.mobile-logo .accent {
+  color: var(--accent-text-color);
+}
+
 /* Site nav  */
 .site-nav {
   display: flex;
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav {
-    display: block;
+    display: none;
   }
 }
 
@@ -231,20 +256,17 @@ textarea {
   line-height: 1.19;
 }
 
+.logo .accent {
+  color: var(--accent-text-color);
+}
+
 .logo__accent {
   color: var(--accent-text-color);
-  font-family: raleway;
 }
 
 .site-nav__list {
   display: flex;
   align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  .site-nav__list {
-    display: block;
-  }
 }
 
 .site-nav__link {
@@ -285,12 +307,6 @@ textarea {
 
 .site-nav__item:first-child {
   margin-left: 93px;
-}
-
-@media screen and (max-width: 768px) {
-  .site-nav__item:first-child {
-    margin-left: 0px;
-  }
 }
 
 /* Auth nav */
@@ -339,12 +355,10 @@ textarea {
 }
 
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  width: 480px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg.jpeg);
   background-position: center;
   background-size: cover;
@@ -353,14 +367,17 @@ textarea {
 }
 
 .hero__title {
-  color: var(--white-color);
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
+  /* or 162% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  color: var(--white-color);
 }
 
 .hero__btn {
@@ -381,41 +398,47 @@ textarea {
 }
 
 .hero__btn:hover, .hero__btn:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 .benefits__list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .benefits__canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
-  margin-left: 32px;
 }
 
 .benefits__name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
   color: var(--title-text-color);
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .benefits__description {
-  width: 270px;
   margin-top: 10px;
 }
 
 .we-do {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 767px) {
+  .we-do {
+    display: none;
+  }
 }
 
 .we-do__title {
@@ -462,7 +485,8 @@ textarea {
 
 .our-team__list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .our-team__card-image {
@@ -480,12 +504,13 @@ textarea {
 }
 
 .our-team__title {
-  color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
-  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
 }
 
 .our-team__member-info {
@@ -510,7 +535,9 @@ textarea {
 
 .social-networks {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding-left: 122px;
+  padding-right: 122px;
 }
 
 .social-networks__link {
@@ -531,23 +558,24 @@ textarea {
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -570,10 +598,14 @@ textarea {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .left-part {
-  margin-right: 70px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__logo {
@@ -582,8 +614,8 @@ textarea {
   text-decoration: none;
   font-family: raleway, monospace;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 28px;
   margin-bottom: 20px;
 }
 
@@ -599,6 +631,7 @@ textarea {
   color: var(--white-color);
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 24px;
 }
 
 .footer__address-link:hover, .footer__address-link:focus {
@@ -616,6 +649,12 @@ textarea {
 .footer__telephone-link:hover,
 .footer__telephone-link:focus {
   color: var(--accent-text-color);
+}
+
+.central-part {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .central-part__title {
@@ -652,7 +691,9 @@ textarea {
 }
 
 .right-part {
-  margin-left: 94px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .right-part__title {
@@ -666,11 +707,13 @@ textarea {
 
 .right-part__subscribe-form {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .right-part__input-field {
   display: block;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-top: 15px;
   padding-right: auto;
@@ -697,7 +740,9 @@ textarea {
   align-items: center;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--accent-text-color);
   color: var(--white-color);
   font-weight: 700;
@@ -1019,31 +1064,31 @@ textarea {
 
 .benefits__list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .benefits__canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
-  margin-left: 32px;
 }
 
 .benefits__name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
   color: var(--title-text-color);
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .benefits__description {
-  width: 270px;
   margin-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */

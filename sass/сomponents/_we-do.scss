@@ -1,5 +1,8 @@
 .we-do {
   padding-bottom: 94px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .we-do__title {
@@ -21,8 +24,6 @@
   line-height: 0;
   display: block;
 }
-
-
 
 .we-do__name {
   position: absolute;

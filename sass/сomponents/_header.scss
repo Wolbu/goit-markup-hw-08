@@ -2,11 +2,38 @@
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
+.mobile-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.mobile-logo {
+  font-family: raleway, monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+
+  & .accent {
+    color: var(--accent-text-color);
+  }
+}
+
 /* Site nav  */
 
 .site-nav {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .logo {
@@ -17,11 +44,14 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  & .accent {
+    color: var(--accent-text-color);
+  }
 }
 
 .logo__accent {
   color: var(--accent-text-color);
-  font-family: raleway;
 }
 
 .site-nav__list {
