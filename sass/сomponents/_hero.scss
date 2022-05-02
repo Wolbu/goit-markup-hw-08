@@ -13,12 +13,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: border-box;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   // max-width: 1600px;
   // min-height: 600px;
   // margin-left: auto;
   // margin-right: auto;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+
   // background-position: center;
   // background-size: cover;
   // background-repeat: no-repeat;
@@ -27,8 +39,7 @@
 
 .hero__title {
   margin-bottom: 40px;
-  font-family: "Roboto";
-  font-style: normal;
+
   font-weight: 900;
   font-size: 26px;
   line-height: 42px;

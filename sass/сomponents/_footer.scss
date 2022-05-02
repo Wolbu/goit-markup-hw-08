@@ -10,6 +10,11 @@
   justify-content: space-between;
   flex-direction: column;
   gap: 60px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .left-part {
@@ -71,7 +76,8 @@
 .central-part__title {
   display: inline-block;
   font-weight: 700;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 16px;
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;

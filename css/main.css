@@ -180,6 +180,13 @@ textarea {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -252,12 +259,19 @@ textarea {
   text-decoration: none;
   font-family: raleway, monospace;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .logo .accent {
   color: var(--accent-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
 }
 
 .logo__accent {
@@ -265,8 +279,10 @@ textarea {
 }
 
 .site-nav__list {
+  margin-left: 88px;
   display: flex;
   align-items: center;
+  gap: 50px;
 }
 
 .site-nav__link {
@@ -301,31 +317,31 @@ textarea {
   border-radius: 2px;
 }
 
-.site-nav__item {
-  margin-left: 50px;
-}
-
-.site-nav__item:first-child {
-  margin-left: 93px;
-}
-
 /* Auth nav */
 .auth-nav {
   display: flex;
-  margin-left: auto;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  margin-left: 84px;
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    flex-direction: row;
+    margin-left: auto;
+  }
 }
 
 .auth-nav__item {
   color: var(--primary-text-color);
   text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   margin-right: 30px;
-}
-
-.auth-nav__item:last-child {
-  margin: 0;
 }
 
 .auth-nav__link {
@@ -347,10 +363,9 @@ textarea {
 }
 
 .auth-nav__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: #757575;
   display: inline-block;
-  margin-left: auto;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -366,10 +381,24 @@ textarea {
   background-origin: border-box;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero__title {
   margin-bottom: 40px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 26px;
   line-height: 42px;
@@ -407,6 +436,25 @@ textarea {
   gap: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
+}
+
 .benefits__canvas {
   display: flex;
   justify-content: center;
@@ -415,6 +463,18 @@ textarea {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__canvas {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__canvas {
+    width: 270px;
+  }
 }
 
 .benefits__name {
@@ -427,6 +487,12 @@ textarea {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__name {
+    text-align: left;
+  }
+}
+
 .benefits__description {
   margin-top: 10px;
 }
@@ -435,7 +501,7 @@ textarea {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .we-do {
     display: none;
   }
@@ -489,8 +555,29 @@ textarea {
   gap: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .our-team__card-image {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__card-image {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__card-image {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .our-team__card {
@@ -501,6 +588,18 @@ textarea {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__card {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__card {
+    width: 270px;
+  }
 }
 
 .our-team__title {
@@ -514,7 +613,8 @@ textarea {
 }
 
 .our-team__member-info {
-  padding: 30px 32px;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .our-team__member-name {
@@ -565,6 +665,12 @@ textarea {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
+}
+
 .clients__list {
   display: flex;
   flex-wrap: wrap;
@@ -588,6 +694,20 @@ textarea {
   border-color: var(--accent-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 92px;
+  }
+}
+
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -600,6 +720,13 @@ textarea {
   justify-content: space-between;
   flex-direction: column;
   gap: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .left-part {
@@ -660,7 +787,8 @@ textarea {
 .central-part__title {
   display: inline-block;
   font-weight: 700;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 16px;
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
@@ -1068,6 +1196,25 @@ textarea {
   gap: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
+}
+
 .benefits__canvas {
   display: flex;
   justify-content: center;
@@ -1078,6 +1225,18 @@ textarea {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__canvas {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__canvas {
+    width: 270px;
+  }
+}
+
 .benefits__name {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -1086,6 +1245,12 @@ textarea {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__name {
+    text-align: left;
+  }
 }
 
 .benefits__description {

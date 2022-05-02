@@ -5,6 +5,10 @@
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
@@ -30,5 +34,14 @@
   &:focus {
     fill: var(--accent-text-color);
     border-color: var(--accent-text-color);
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
   }
 }
