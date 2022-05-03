@@ -8,24 +8,75 @@
   <title>Web Studio</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
   <!-- Шапка -->
   <header class="header">
     <div class="container header__container">
+      <!-- Mobile menu  -->
+      <div class="mobile-header">
+        <a class="mobile-logo" href="./index.html"><span class="accent">Web</span>Studio</a>
+        <button data-menu-button type="button" class="burger-button">
+          <svg width="40" height="40">
+            <use class="icon-open" href="./images/icons/symbol-defs.svg#burger-open"></use>
+            <use class="icon-close" href="./images/icons/symbol-defs.svg#burger-close"></use>
+          </svg>
+        </button>
+        <div data-menu class="mobile-menu">
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link" href="#" target="_blank" rel="noopener noreferrer">Cтудия</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link" href="./portfolio.html" target="_blank"
+                rel="noopener noreferrer">Портфолио</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link" href="#" target="_blank" rel="noopener noreferrer">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__contacts-list">
+            <li class="mobile-menu__contacts-item">
+              <a class="mobile-menu__contacts-link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a class="mobile-menu__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-networks">
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Desktop menu -->
+
       <nav class="site-nav">
-        <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+        <a class="logo" href="./index.html"><span class="accent">Web</span>Studio</a>
         <ul class="site-nav__list">
           <li class="site-nav__item">
-            <a class=" site-nav__link" href="./index.html">Cтудия</a>
+            <a class="site-nav__link " href="./index.html">Cтудия</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link site-nav__link--active" href="./portfolio.html">Портфолио </a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="">Контакты</a></li>
+            <a class="site-nav__link" href="">Контакты</a>
+          </li>
         </ul>
         <ul class="auth-nav">
           <li class="auth-nav__item">
@@ -44,7 +95,6 @@
     </div>
   </header>
 
-
   <!-- Основная часть -->
   <main>
     <section class="portfolio section">
@@ -55,7 +105,9 @@
             <button class="portfolio-nav__btn" type="button">Все</button>
           </li>
           <li class="portfolio-nav__item">
-            <button class="portfolio-nav__btn" type="button">Веб-сайты</button>
+            <button class="portfolio-nav__btn" type="button">
+              Веб-сайты
+            </button>
           </li>
           <li class="portfolio-nav__item">
             <button class="portfolio-nav__btn" type="button">
@@ -66,7 +118,9 @@
             <button class="portfolio-nav__btn" type="button">Дизайн</button>
           </li>
           <li class="portfolio-nav__item">
-            <button class="portfolio-nav__btn" type="button">Маркетинг</button>
+            <button class="portfolio-nav__btn" type="button">
+              Маркетинг
+            </button>
           </li>
         </ul>
 
@@ -76,10 +130,11 @@
               <div class="works-list__info-card">
                 <img class="works-list__image" src="./images/portfolio1.jpeg" alt="Первая работа в портфолио"
                   width="450" height="294" />
-                <p class="works-list__additional-info">Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и
-                  сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <p class="works-list__additional-info">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
               <div class="works-list__info">
                 <h2 class="works-list__title">Технокряк</h2>
@@ -93,10 +148,11 @@
               <div class="works-list__info-card">
                 <img class="works-list__image" src="./images/portfolio2.jpeg" alt="Вторая работа в портфолио"
                   width="450" height="294" />
-                <p class="works-list__additional-info">Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и
-                  сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <p class="works-list__additional-info">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
               <div class="works-list__info">
                 <h2 class="works-list__title">
@@ -104,7 +160,6 @@
                 </h2>
                 <p class="works-list__type">Дизайн</p>
               </div>
-
             </a>
           </li>
 
@@ -114,10 +169,11 @@
                 <img class="works-list__image" src="./images/portfolio3.jpeg" alt="Третяя работа в портфолио"
                   width="450" height="294" />
 
-                <p class="works-list__additional-info">Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и
-                  сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <p class="works-list__additional-info">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
               <div class="works-list__info">
                 <h2 class="works-list__title">
@@ -125,7 +181,6 @@
                 </h2>
                 <p class="works-list__type">Приложение</p>
               </div>
-
             </a>
           </li>
 
@@ -134,10 +189,11 @@
               <div class="works-list__info-card">
                 <img class="works-list__image" src="./images/portfolio4.jpeg" alt="Четвертая работа в портфолио"
                   width="450" height="294" />
-                <p class="works-list__additional-info">Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и
-                  сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <p class="works-list__additional-info">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
               <div class="works-list__info">
                 <h2 class="works-list__title">
@@ -145,7 +201,6 @@
                 </h2>
                 <p class="works-list__type">Маркетинг</p>
               </div>
-
             </a>
           </li>
 
@@ -154,10 +209,11 @@
               <div class="works-list__info-card">
                 <img class="works-list__image" src="./images/portfolio5.jpeg" alt="Пятая работа в портфолио" width="450"
                   height="294" />
-                <p class="works-list__additional-info">Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и
-                  сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <p class="works-list__additional-info">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
               <div class="works-list__info">
                 <h2 class="works-list__title">
@@ -165,7 +221,6 @@
                 </h2>
                 <p class="works-list__type">Приложение</p>
               </div>
-
             </a>
           </li>
 
@@ -174,10 +229,11 @@
               <div class="works-list__info-card">
                 <img class="works-list__image" src="./images/portfolio6.jpeg" alt="Шестая работа в портфолио"
                   width="450" height="294" />
-                <p class="works-list__additional-info">Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и
-                  сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <p class="works-list__additional-info">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
               <div class="works-list__info">
                 <h2 class="works-list__title" lang="en">
@@ -185,7 +241,6 @@
                 </h2>
                 <p class="works-list__type">Веб-сайт</p>
               </div>
-
             </a>
           </li>
 
@@ -195,10 +250,11 @@
                 <img class="works-list__image" src="./images/portfolio7.jpeg" alt="Седьмая работа в портфолио"
                   width="450" height="294" />
 
-                <p class="works-list__additional-info">Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и
-                  сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <p class="works-list__additional-info">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
               <div class="works-list__info">
                 <h2 class="works-list__title">
@@ -206,7 +262,6 @@
                 </h2>
                 <p class="works-list__type">Дизайн</p>
               </div>
-
             </a>
           </li>
 
@@ -215,10 +270,11 @@
               <div class="works-list__info-card">
                 <img class="works-list__image" src="./images/portfolio8.jpeg" alt="Восьмая работа в портфолио"
                   width="450" height="294" />
-                <p class="works-list__additional-info">Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и
-                  сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <p class="works-list__additional-info">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
               <div class="works-list__info">
                 <h2 class="works-list__title">
@@ -226,7 +282,6 @@
                 </h2>
                 <p class="works-list__type">Маркетинг</p>
               </div>
-
             </a>
           </li>
 
@@ -235,10 +290,11 @@
               <div class="works-list__info-card">
                 <img class="works-list__image" src="./images/portfolio9.jpeg" alt="Девятая работа в портфолио"
                   width="450" height="294" />
-                <p class="works-list__additional-info">Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и
-                  сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <p class="works-list__additional-info">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
               <div class="works-list__info">
                 <h2 class="works-list__title" lang="en">Growing Business</h2>
@@ -254,7 +310,6 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__container">
-
       <div class="left-part">
         <a class="footer__logo" href="./index.html"><span class="footer__logo--accent">Web</span>Studio
         </a>
@@ -262,8 +317,7 @@
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__address-link" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г.
-                Киев,
-                пр-т Леси Украинки, 26</a>
+                Киев, пр-т Леси Украинки, 26</a>
             </li>
             <li class="footer__item">
               <a class="footer__mail-link" href="mailto:info@devstudio.com">info@example.com</a>
@@ -310,8 +364,9 @@
       <div class="right-part">
         <b class="right-part__title">Подпишитесь на рассылку</b>
         <form class="right-part__subscribe-form">
-          <input class="right-part__input-field" name="mail" type="email" id="footer-mail-input" placeholder="E-mail">
-          <button type="submit" class="subscribe-btn">Подписаться
+          <input class="right-part__input-field" name="mail" type="email" id="footer-mail-input" placeholder="E-mail" />
+          <button type="submit" class="subscribe-btn">
+            Подписаться
             <svg class="subscribe-btn__icon" width="24" height="24">
               <use href="./images/icons/symbol-defs.svg#send-footer"></use>
             </svg>
@@ -320,6 +375,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

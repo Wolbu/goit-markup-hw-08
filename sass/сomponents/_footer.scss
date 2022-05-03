@@ -112,10 +112,14 @@
 }
 
 .right-part {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  // margin-left: 94px;
+
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
 }
 
 .right-part__title {
@@ -131,6 +135,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
