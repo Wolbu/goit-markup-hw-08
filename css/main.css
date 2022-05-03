@@ -459,8 +459,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
-  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -564,6 +562,7 @@ textarea {
 
 .our-team__card-image {
   display: block;
+  width: 290px;
 }
 
 @media screen and (min-width: 768px) {
@@ -673,6 +672,8 @@ textarea {
 
 .clients__list {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -1219,8 +1220,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
-  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
