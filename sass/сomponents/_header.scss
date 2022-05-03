@@ -5,6 +5,9 @@
 .mobile-header {
   padding-top: 16px;
   padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   @media screen and (min-width: 767px) {
     display: none;
@@ -22,6 +25,123 @@
 
   & .accent {
     color: var(--accent-text-color);
+  }
+}
+
+.burger-button {
+  border: none;
+  background-color: #fff;
+  z-index: 2;
+  &:hover {
+    fill: var(--accent-text-color);
+  }
+}
+
+.burger-button.is-open .icon-close {
+  display: block;
+}
+
+.burger-button.is-open .icon-open {
+  display: none;
+}
+
+.icon-close {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  padding: 40px 48px;
+  transform: translateX(100%);
+  transition: transform 500ms ease-in;
+
+  &.is-open {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mobile-menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-menu__nav-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.mobile-menu__nav-link {
+  color: var(--title-text-color);
+
+  &:hover {
+    color: var(--accent-text-color);
+  }
+}
+
+.mobile-menu__contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+
+// .mobile-menu__contacts-item {
+// }
+
+.mobile-menu__contacts-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+
+  &.tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+}
+
+.mobile-menu {
+  &__social-networks {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__social-link {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-text-color);
+
+    &::after {
+      content: "";
+      color: red;
+      height: 100%;
+      width: 1px;
+    }
   }
 }
 
