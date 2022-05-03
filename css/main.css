@@ -1078,12 +1078,20 @@ svg {
 }
 
 .works-list__item {
+  display: flex;
   width: 450px;
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .works-list__item {
+    width: 354px;
+  }
+}
+
 .works-list__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1116,6 +1124,7 @@ svg {
 }
 
 .works-list__info {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
