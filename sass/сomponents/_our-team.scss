@@ -13,21 +13,6 @@
   }
 }
 
-.our-team__card-image {
-  display: block;
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 374px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 260px;
-  }
-}
-
 .our-team__card {
   background-color: var(--white-color);
   border: 0px solid rgba(238, 238, 238, 1);
@@ -53,8 +38,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  // font-size: 36px;
-  // line-height: 1.16;
   margin-bottom: 30px;
 }
 
@@ -73,10 +56,10 @@
 }
 
 .our-team__member-occupation {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-bottom: 16px;
 }
 
 .social-networks {
