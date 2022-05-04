@@ -29,7 +29,7 @@
   font-family: raleway, monospace;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   margin-bottom: 20px;
 }
 
@@ -46,7 +46,7 @@
   color: var(--white-color);
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  line-height: 24px;
+  line-height: 1.71;
 
   &:hover,
   &:focus {
@@ -74,7 +74,7 @@
   display: inline-block;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;

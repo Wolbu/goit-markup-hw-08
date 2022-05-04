@@ -15,7 +15,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 
@@ -77,7 +77,7 @@
 .mobile-menu__nav-item {
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -105,7 +105,7 @@
 .mobile-menu__contacts-link {
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 
   color: #757575;
@@ -113,13 +113,13 @@
   &.tel {
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
 
     @media screen and(min-width: 480px) {
       font-size: 34px;
-      line-height: 40px;
+      line-height: 1.17;
     }
   }
 }
@@ -150,7 +150,7 @@
   &__social-link {
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
 
     color: var(--accent-text-color);
