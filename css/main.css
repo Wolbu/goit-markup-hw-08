@@ -532,31 +532,31 @@ svg {
 
 @media screen and (max-width: 767.98px) {
   .hero {
-    background-image: url(../../images/hero/hero-bg_sm.jpeg);
+    background-image: url(../images/hero/hero-bg_sm.jpeg);
   }
 }
 
 @media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-moz-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero/hero-bg@2x_sm.jpeg);
+    background-image: url(../images/hero/hero-bg@2x_sm.jpeg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../images/hero/hero-bg_md.jpeg);
+    background-image: url(../images/hero/hero-bg_md.jpeg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero/hero-bg@2x_md.jpeg);
+    background-image: url(../images/hero/hero-bg@2x_md.jpeg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../../images/hero/hero-bg_lg.jpeg);
+    background-image: url(../images/hero/hero-bg_lg.jpeg);
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -564,7 +564,7 @@ svg {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero/hero-bg@2x_lg.jpeg);
+    background-image: url(../images/hero/hero-bg@2x_lg.jpeg);
   }
 }
 
