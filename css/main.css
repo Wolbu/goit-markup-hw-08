@@ -146,6 +146,10 @@ body {
   line-height: 1.71;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -274,7 +278,7 @@ svg {
 .mobile-menu {
   z-index: 1;
   position: fixed;
-  display: flex;
+  display: none;
   flex-direction: column;
   top: 0;
   left: 0;
@@ -523,7 +527,7 @@ svg {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_sm.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -532,39 +536,42 @@ svg {
 
 @media screen and (max-width: 767.98px) {
   .hero {
-    background-image: url(../images/hero/hero-bg_sm.jpeg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_sm.jpeg);
   }
 }
 
 @media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-moz-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/hero-bg@2x_sm.jpeg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg@2x_sm.jpeg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero/hero-bg_md.jpeg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_md.jpeg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/hero-bg@2x_md.jpeg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg@2x_md.jpeg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero/hero-bg_lg.jpeg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_lg.jpeg);
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/hero-bg@2x_lg.jpeg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg@2x_lg.jpeg);
   }
 }
 
@@ -577,6 +584,13 @@ svg {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
@@ -763,6 +777,13 @@ svg {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .our-team__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .our-team__member-info {
   padding-top: 30px;
   padding-bottom: 24px;
@@ -819,6 +840,8 @@ svg {
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -882,10 +905,12 @@ svg {
   }
 }
 
-.left-part {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .left-part {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .footer__logo {
@@ -931,10 +956,12 @@ svg {
   color: var(--accent-text-color);
 }
 
-.central-part {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .central-part {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .central-part__title {
@@ -971,16 +998,11 @@ svg {
   background-color: var(--accent-text-color);
 }
 
-.right-part {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .right-part {
-    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 
@@ -1127,6 +1149,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .works-list__item {
+    width: 370px;
+  }
+}
+
 .works-list__link {
   display: flex;
   flex-direction: column;
@@ -1148,13 +1176,32 @@ svg {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
-  font-size: 18px;
+  padding: 20px;
+  font-size: 15px;
   line-height: 1.56;
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .works-list__additional-info {
+    padding: 77px 24px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works-list__additional-info {
+    padding-top: 49px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works-list__additional-info {
+    padding: 63px 24px;
+  }
 }
 
 .works-list__link:hover .works-list__additional-info {
@@ -1211,7 +1258,6 @@ svg {
   top: 50%;
   left: 50%;
   width: 95%;
-  height: 609px;
   background-color: var(--white-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1222,6 +1268,7 @@ svg {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: 609px;
   }
 }
 
@@ -1316,7 +1363,7 @@ svg {
 .mf__comment-field {
   display: block;
   width: 100%;
-  height: 120px;
+  height: 55px;
   margin-bottom: 20px;
   padding: 12px 16px;
   outline: none;
@@ -1324,6 +1371,12 @@ svg {
   border-radius: 4px;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .mf__comment-field {
+    height: 120px;
+  }
 }
 
 .mf__comment-field::placeholder {

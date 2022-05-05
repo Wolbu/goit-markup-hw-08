@@ -2,38 +2,71 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(
-    to top,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-bg_sm.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: border-box;
 
   @include mq(mobile-only) {
-    background-image: url(../images/hero/hero-bg_sm.jpeg);
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-bg_sm.jpeg);
 
     @include mq(retina) {
-      background-image: url(../images/hero/hero-bg@2x_sm.jpeg);
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-bg@2x_sm.jpeg);
     }
   }
 
   @include mq(tablet) {
-    background-image: url(../images/hero/hero-bg_md.jpeg);
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-bg_md.jpeg);
 
     @include mq(retina) {
-      background-image: url(../images/hero/hero-bg@2x_md.jpeg);
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-bg@2x_md.jpeg);
     }
   }
 
   @include mq(desktop) {
-    background-image: url(../images/hero/hero-bg_lg.jpeg);
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-bg_lg.jpeg);
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    @include margin-auto;
 
     @include mq(retina) {
-      background-image: url(../images/hero/hero-bg@2x_lg.jpeg);
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-bg@2x_lg.jpeg);
     }
   }
 }
@@ -47,6 +80,11 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+
+  @include mq(desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {

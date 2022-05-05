@@ -5,6 +5,10 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 a {
